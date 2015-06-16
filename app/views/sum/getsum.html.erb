@@ -1,0 +1,17 @@
+<%# <h1>Sum#getsum</h1> %>
+<%# <p>Find me in app/views/sum/getsum.html.erb</p> %>
+<h1>
+A calculator to sum up three numbers.
+</h1>
+
+<%= form_tag do %>
+    <div class="forms">
+    <%= label_tag("Number 1:") %>
+    <%= text_field_tag(:n1, nil, placeholder: "Enter a number here...", autofocus: true)%>
+    <%= label_tag("Number 2:") %>
+    <%= text_field_tag(:n1, nil, placeholder: "Enter a number here...", autofocus: true)%>
+    <%= label_tag("Number 3:") %>
+    <%= text_field_tag(:n1, nil, placeholder: "Enter a number here...", autofocus: true)%>
+    <%= submit_tag 'Calculate!' %>
+    </div>
+<% end %>
